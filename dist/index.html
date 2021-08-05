@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - TechnicalDocumentation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header>Java Tutorial</header>
+  <ul>
+    <li><a class="nav-link" href="#Java_Overview">Java Overview</a></li>
+    <li>
+      <a class="nav-link" href="#Basic_Syntax"
+        >Basic Syntax</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#Object_and_Classes">Object and Classes</a>
+    </li>
+    <li><a class="nav-link" href="#Constructors">Constructors</a></li>
+    <li><a class="nav-link" href="#Basic_DataType">Basic DataType</a></li>
+    <li>
+      <a class="nav-link" href="#Variable_Types">Variable Types</a>
+    </li>
+    <li><a class="nav-link" href="#Loop_Control">Loop Control</a></li>
+    <li><a class="nav-link" href="#Decision_Making">Decision Making</a></li>
+    <li><a class="nav-link" href="#Methods">Methods</a></li>
+    <li><a class="nav-link" href="#Files_and_IO">Files and IO</a></li>
+    </ul>
+</nav>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+  
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+</style>
+<main id="main-doc">
+  <div class="main-section" id="Java_Overview">
+    <header>Java Overview</header>
+    <p>Java programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 as core component of Sun Microsystems' Java platform (Java 1.0 [J2SE]).</p>
+    <p>Java has following characteristics</p>
+    <ul>
+      <li>Object Oriented</li>
+       <li>Platform Independent</li>
+       <li>Simple</li>
+       <li>Secure</li>
+       <li>Architecture-neutral</li>
+       <li>Portable</li>
+       <li>Multithreaded</li>
+       <li>Interpreted</li>
+    </ul>
+    <p><strong>Object Oriented - </strong>In Java, everything is an Object. Java can be easily extended since it is based on the Object model.</p>
+     <p><strong>Platform Independent - </strong>Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.</p>
+     
+     <p><strong>Simple - </strong>Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.</p>
+     <p><strong>Secure - </strong>Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.</p>
+     <p><strong>Architecture-neutral - </strong>Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.</p>
+     <p><strong>Portable - </strong>Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.</p>
+     <p><strong>Multithreaded - </strong>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.</p>
+    <p><strong>Interpreted - </strong>Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.</p>
+  </div>
+  <div class="main-section" id="Basic_Syntax">
+    <header>Basic Syntax</header>
+    <p>When we consider a Java program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.</p>
+    <ul>
+      <li><strong>Object −</strong> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</li>
+      
+      <li><strong>Class −</strong> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</li>
+      <li><strong>Methods −</strong> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</li>
+      <li><strong>Instance Variables −</strong> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</li>
+    </ul>
+    <h2>First Java Program</h2>
+    <p>Let us look at a simple code that will print the words <strong>Hello World</strong>.</p>
+    <div id="sec">
+    <pre><code>public class MyFirstJavaProgram {
+
+   /* This is my first java program.
+    * This will print 'Hello World' as the output
+    */
+
+   public static void main(String []args) {
+      System.out.println("Hello World");
+   }
+  } </code></pre>
+    </div>
+    
+  </div>
+  <div class="main-section" id="Object_and_Classes">
+    <header>Object and Classes</header>
+    <p>Java is an Object-Oriented Language. As a language that has the Object-Oriented feature, Java supports the following fundamental concepts −</p>
+    <ul>
+      <li>Polymorphism</li>
+      <li>Inheritance</li>
+      <li>Encapsulation</li>
+      <li>Abstraction</li>
+      <li>Classes</li>
+      <li>Objects</li>
+      <li>Instance</li>
+      <li>Method</li>
+<li>Message Passing</li>
+    </ul>
+    <h2>Objects</h2>
+    <p>Let us now look deep into what are objects. If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects have a state and a behavior.
+
+If we consider a dog, then its state is - name, breed, color, and the behavior is - barking, wagging the tail, running.
+
+If you compare the software object with a real-world object, they have very similar characteristics.
+
+Software objects also have a state and a behavior. A software object's state is stored in fields and behavior is shown via methods.
+
+So in software development, methods operate on the internal state of an object and the object-to-object communication is done via methods.</p>
+    <h2>Classes</h2>
+    <p>A class is a blueprint from which individual objects are created.
+
+Following is a sample of a class.</p>
+    <div id="sec">
+      <pre><code>
+      public class Dog {
+   String breed;
+   int age;
+   String color;
+
+   void barking() {
+   }
+
+   void hungry() {
+   }
+
+   void sleeping() {
+   }
+}
+      </code></pre>
+    </div>
+  </div>
+  <div class="main-section" id="Constructors">
+    <header>Constructors</header>
+    <p>A constructor initializes an object when it is created. It has the same name as its class and is syntactically similar to a method. However, constructors have no explicit return type.
+</p>
+    <p>Typically, you will use a constructor to give initial values to the instance variables defined by the class, or to perform any other start-up procedures required to create a fully formed object.</p>
+    <p>All classes have constructors, whether you define one or not, because Java automatically provides a default constructor that initializes all member variables to zero. However, once you define your own constructor, the default constructor is no longer used.</p>
+    <p><strong>Syntax</strong><p>
+    <p>Following is the syntax of a constructor −</p>
+    <div id="sec">
+      <pre><code>
+        class ClassName {
+   ClassName() {
+     }
+  }
+       </code></pre>
+    </div>
+    <p>Java allows two types of constructors namely −</p>
+    <p><strong>No argument Constructors - </strong>As the name specifies the no argument constructors of Java does not accept any parameters instead, using these constructors the instance variables of a method will be initialized with fixed values for all objects.</p>
+    
+     <p><strong>Parameterized Constructors - </strong>Most often, you will need a constructor that accepts one or more parameters. Parameters are added to a constructor in the same way that they are added to a method, just declare them inside the parentheses after the constructor's name.</p> 
+  </div>
+  <div class="main-section" id="Basic_DataType">
+    <header>Basic DataType</header>
+    <p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in the memory.</p>
+    <p>
+Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables.</p>
+    <p>There are two data types available in Java −</p>
+    <ul>
+      <li><strong>Primitive Data Types - </strong>There are eight primitive datatypes supported by Java. Primitive datatypes are predefined by the language and named by a keyword</li>
+      <li><strong>Reference Datatypes - </strong>Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy, etc.</li>
+    </ul>
+  </div>
+  <div class="main-section" id="Variable_Types">
+    <header>Variable Types</header>
+    <p>A variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.</p>
+    <p>Following are valid examples of variable declaration and initialization in Java −</p>
+    <h2>Example</h2>
+    <div id="sec">
+    <pre><code>
+      
+int a, b, c;  
+int a = 10, b = 10; 
+byte B = 22;         
+double pi = 3.14159; 
+char a = 'a';   
+    </code></pre>
+    </div>
+  </div>
+  <div class="main-section" id="Loop_Control"> 
+    <header>Loop Control</header>
+    <p>There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.</p>
+    <p>Programming languages provide various control structures that allow for more complicated execution paths.</p>
+    <p>A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages −</p>
+    <img src="https://www.tutorialspoint.com/java/images/loop_architecture.jpg"></img>
+  </div>
+<div class="main-section" id="Decision_Making">
+  <header>Decision Making</header>
+  <p>Decision making structures have one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.</p>
+  <p>Following is the general form of a typical decision making structure found in most of the programming languages −</p>
+  <img src="https://www.tutorialspoint.com/java/images/decision_making.jpg"/>
+</div>
+<div class="main-section" id="Methods">
+  <header>Methods</header>
+  <p>A Java method is a collection of statements that are grouped together to perform an operation. When you call the System.out.println() method, for example, the system actually executes several statements in order to display a message on the console.</p>
+  <div id="sec">
+    <pre><code>
+    public class ExampleMinNumber {
+   
+   public static void main(String[] args) {
+    int a = 11;
+    int b = 6;
+    int c = minFunction(a, b);
+    System.out.println("Minimum Value = " + c);
+   }
+
+   /** returns the minimum of two numbers */
+   public static int minFunction(int n1, int n2) {
+      int min;
+      if (n1 > n2)
+         min = n2;
+      else
+         min = n1;
+
+      return min; 
+   }
+}
+    </code></pre>
+  </div>
+</div>
+<div class="main-section" id="Files_and_IO">
+  <header>Files and IO</header>
+  <p>The java.io package contains nearly every class you might ever need to perform input and output (I/O) in Java. All these streams represent an input source and an output destination. The stream in the java.io package supports many data such as primitives, object, localized characters, etc.</p>
+  <h2>Stream</h2>
+  <p>A stream can be defined as a sequence of data. There are two kinds of Streams −</p>
+  <ul>
+    <li><strong>InPutStream − </strong>The InputStream is used to read data from a source.</li>
+    <li><strong>OutPutStream −</strong> The OutputStream is used for writing data to a destination.</li>
+  </ul>
+  <img id="stream" src="https://www.tutorialspoint.com/java/images/streams.png"/>
+</div>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
